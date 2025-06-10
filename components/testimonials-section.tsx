@@ -1,6 +1,5 @@
 import { Star } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import Image from "next/image";
 
 const testimonials = [
   {
@@ -36,8 +35,8 @@ export default function TestimonialsSection() {
             Say
           </h2>
           <p className="mt-4 text-lg text-gray-600 md:text-xl max-w-2xl mx-auto">
-            We love our customers, and they love us! Here's some of the sweet
-            things they've shared:
+            We love our customers, and they love us! Here&apos;s some of the
+            sweet things they&apos;ve shared:
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -67,7 +66,9 @@ export default function TestimonialsSection() {
               <CardContent className="px-6 pb-6">
                 {" "}
                 {/* Adjusted padding */}
-                <p className="text-gray-700 italic">"{testimonial.quote}"</p>
+                <p className="text-gray-700 italic">
+                  &ldquo;{testimonial.quote}&rdquo;
+                </p>
               </CardContent>
             </Card>
           ))}

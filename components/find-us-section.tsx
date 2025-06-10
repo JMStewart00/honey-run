@@ -1,18 +1,22 @@
-import { MapPin, CalendarDays, Facebook } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { MapPin, CalendarDays, Facebook } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function FindUsSection() {
   return (
-    <section id="find-us" className="w-full py-16 md:py-24 lg:py-32 bg-honeyrun-yellow-light">
+    <section
+      id="find-us"
+      className="w-full py-16 md:py-24 lg:py-32 bg-honeyrun-yellow-light"
+    >
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl font-bold tracking-tighter text-honeyrun-black sm:text-4xl md:text-5xl">
             Come <span className="text-honeyrun-red-dark">Find Us!</span>
           </h2>
           <p className="mt-4 text-lg text-gray-600 md:text-xl max-w-2xl mx-auto">
-            We're always popping up at local events, farmers markets, and festivals. Follow us on Facebook for the
-            latest updates on where to find our delicious treats!
+            We&apos;re always popping up at local events, farmers markets, and
+            festivals. Follow us on Facebook for the latest updates on where to
+            find our delicious treats!
           </p>
         </div>
         <div className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-xl border border-honeyrun-red/20">
@@ -24,10 +28,12 @@ export default function FindUsSection() {
                 <CalendarDays className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-honeyrun-black">Upcoming Events</h3>
+                <h3 className="text-xl font-semibold text-honeyrun-black">
+                  Upcoming Events
+                </h3>
                 <p className="text-gray-700">
-                  Check our Facebook page for the most current schedule of events and locations. We post regular
-                  updates!
+                  Check our Facebook page for the most current schedule of
+                  events and locations. We post regular updates!
                 </p>
               </div>
             </div>
@@ -36,10 +42,12 @@ export default function FindUsSection() {
                 <MapPin className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-honeyrun-black">Typical Locations</h3>
+                <h3 className="text-xl font-semibold text-honeyrun-black">
+                  Typical Locations
+                </h3>
                 <p className="text-gray-700">
-                  You can often find us at major local festivals, community fairs, and select farmers markets in the
-                  region.
+                  You can often find us at major local festivals, community
+                  fairs, and select farmers markets in the region.
                 </p>
               </div>
             </div>
@@ -48,11 +56,14 @@ export default function FindUsSection() {
                 <Facebook className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-honeyrun-black">Follow Us on Facebook</h3>
+                <h3 className="text-xl font-semibold text-honeyrun-black">
+                  Follow Us on Facebook
+                </h3>
                 <p className="text-gray-700 mb-4">
                   {" "}
                   {/* Increased margin-bottom */}
-                  Stay connected and be the first to know about new flavors, special offers, and where we'll be next!
+                  Stay connected and be the first to know about new flavors,
+                  special offers, and where we&apos;ll be next!
                 </p>
                 <Button
                   asChild
@@ -73,5 +84,5 @@ export default function FindUsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
