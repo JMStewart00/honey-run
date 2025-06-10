@@ -9,9 +9,9 @@ export default function HeroSection() {
         <Image
           src="/rainbow-kettle-corn.jpg"
           alt="Abstract background of colorful kettle corn"
-          layout="fill"
-          objectFit="cover"
-          className="pointer-events-none"
+          fill
+          sizes="100vw"
+          className="pointer-events-none object-cover"
           priority
         />
       </div>

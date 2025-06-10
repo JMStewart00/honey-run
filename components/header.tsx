@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react"; // Added X for close button
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
   SheetClose,
-} from "@/components/ui/sheet"; // Added SheetClose
+  SheetTitle,
+} from "@/components/ui/sheet";
 
 export default function Header() {
   const navItems = [
@@ -51,9 +52,9 @@ export default function Header() {
               <Button
                 variant="outline"
                 size="icon"
-                className="border-honeyrun-red text-honeyrun-red hover:bg-honeyrun-red hover:text-white transition-colors duration-200 ease-in-out"
+                className="border-honeyrun-red text-honeyrun-red hover:bg-honeyrun-red hover:text-white"
               >
-                <Menu className="h-7 w-7" />
+                <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
@@ -61,6 +62,7 @@ export default function Header() {
               side="right"
               className="bg-honeyrun-red text-honeyrun-yellow-light p-0 w-full max-w-xs sm:max-w-sm"
             >
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between p-6 border-b border-honeyrun-yellow-light/30">
                   <Link
@@ -68,30 +70,20 @@ export default function Header() {
                     className="flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-sm"
                   >
                     <Image
-                      src="/logo.png" // Consider a white version of logo for red background
+                      src="/logo.png"
                       alt="Honey Run Kettle Company Logo"
-                      width={160}
-                      height={40}
-                      className="h-auto filter brightness-0 invert" // Makes logo white
+                      width={140}
+                      height={35}
+                      className="h-auto w-auto max-h-[35px]"
                     />
                   </Link>
-                  <SheetClose asChild>
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className="text-honeyrun-yellow-light hover:bg-honeyrun-red-dark/50 hover:text-white"
-                    >
-                      <X className="h-7 w-7" />
-                      <span className="sr-only">Close menu</span>
-                    </Button>
-                  </SheetClose>
                 </div>
-                <nav className="flex-grow p-6 space-y-3">
+                <nav className="flex-grow p-6 space-y-2">
                   {navItems.map((item) => (
                     <SheetClose key={item.name} asChild>
                       <Link
                         href={item.href}
-                        className="block rounded-md px-4 py-3 text-lg font-medium hover:bg-honeyrun-red-dark hover:text-white focus:bg-honeyrun-red-dark focus:text-white focus:outline-none transition-colors duration-200 ease-in-out"
+                        className="block rounded-md px-4 py-3 text-lg font-medium hover:bg-honeyrun-red-dark hover:text-white focus:bg-honeyrun-red-dark focus:text-white focus:outline-none"
                       >
                         {item.name}
                       </Link>

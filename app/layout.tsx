@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Honey Run Kettle Company - Fresh Kettle Corn & Lemonade",
-  description: "Discover delicious, freshly popped kettle corn...",
+  description:
+    "Discover delicious, freshly popped kettle corn and refreshing lemonade from Honey Run Kettle Company. Perfect for festivals, markets, and events!",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",

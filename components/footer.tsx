@@ -63,6 +63,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Honey Run Kettle Company. All
             Rights Reserved.
           </p>
+          <p className="mt-2">Crafted in Washington, IN</p>
         </div>
       </div>
     </footer>
