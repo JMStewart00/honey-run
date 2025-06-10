@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
@@ -10,6 +10,11 @@ const config = {
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   prefix: "",
+  experimental: {
+    theme: {
+      inline: true,
+    },
+  },
   theme: {
     container: {
       center: true,
@@ -19,56 +24,6 @@ const config = {
       },
     },
     extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        // Custom Honey Run Colors based on logo
-        "honeyrun-yellow": {
-          DEFAULT: "#fdcb5d", // Extracted from logo background
-          light: "#FFF9C4", // A lighter shade for backgrounds
-          dark: "#F57F17", // A darker, more orangey shade for accents
-        },
-        "honeyrun-red": {
-          DEFAULT: "#D32F2F", // Extracted from logo swoosh
-          light: "#FFCDD2", // A lighter shade
-          dark: "#B71C1C", // A darker shade for accents
-        },
-        "honeyrun-black": {
-          // Added for logo text consistency
-          DEFAULT: "#212121", // A very dark gray, almost black
-        },
-      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -90,7 +45,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config
+  plugins: [],
+} satisfies Config;
 
-export default config
+export default config;

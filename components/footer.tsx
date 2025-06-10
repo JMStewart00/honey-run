@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Facebook } from "lucide-react" // Assuming Twitter/X and Instagram might be added later
-import Image from "next/image"
+import Link from "next/link";
+import { Facebook } from "lucide-react"; // Assuming Twitter/X and Instagram might be added later
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,14 +10,16 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <Link href="/" className="flex items-center mb-2">
               <Image
-                src="/honey-run-logo.png"
+                src="/logo.png"
                 alt="Honey Run Kettle Company Logo"
                 width={180} // Adjust as needed
                 height={45} // Adjust as needed
                 className="h-auto"
               />
             </Link>
-            <p className="text-sm text-center md:text-left">Freshly Popped, Simply Delicious.</p>
+            <p className="text-sm text-center md:text-left">
+              Freshly Popped, Simply Delicious.
+            </p>
           </div>
 
           <div className="flex flex-col items-center">
@@ -57,9 +59,12 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-honeyrun-yellow-light/30 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Honey Run Kettle Company. All Rights Reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Honey Run Kettle Company. All
+            Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

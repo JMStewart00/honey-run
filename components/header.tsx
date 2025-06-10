@@ -1,8 +1,13 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Menu, X } from "lucide-react" // Added X for close button
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet" // Added SheetClose
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X } from "lucide-react"; // Added X for close button
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet"; // Added SheetClose
 
 export default function Header() {
   const navItems = [
@@ -11,7 +16,7 @@ export default function Header() {
     { name: "Features", href: "#features" },
     { name: "Testimonials", href: "#testimonials" },
     { name: "Find Us", href: "#find-us" },
-  ]
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-honeyrun-red/20 bg-honeyrun-yellow shadow-md h-24 flex items-center">
@@ -21,7 +26,7 @@ export default function Header() {
           className="flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-honeyrun-red-dark rounded-sm"
         >
           <Image
-            src="/honey-run-logo.png"
+            src="/logo.png"
             alt="Honey Run Kettle Company Logo"
             width={200}
             height={50}
@@ -63,7 +68,7 @@ export default function Header() {
                     className="flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-sm"
                   >
                     <Image
-                      src="/honey-run-logo.png" // Consider a white version of logo for red background
+                      src="/logo.png" // Consider a white version of logo for red background
                       alt="Honey Run Kettle Company Logo"
                       width={160}
                       height={40}
@@ -104,5 +109,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }

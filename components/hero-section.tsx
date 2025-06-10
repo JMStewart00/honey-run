@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -21,11 +21,14 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-extrabold tracking-tighter text-honeyrun-black sm:text-5xl md:text-6xl lg:text-7xl">
-            Taste the <span className="text-honeyrun-red-dark">Sweet & Salty</span> Perfection!
+            Taste the{" "}
+            <span className="text-honeyrun-red-dark">Sweet & Salty</span>{" "}
+            Perfection!
           </h1>
           <p className="mt-6 text-lg text-gray-700 md:text-xl max-w-xl mx-auto">
-            Welcome to Honey Run Kettle Company! We craft irresistible, freshly popped kettle corn and serve up
-            refreshing, hand-squeezed lemonades. Perfect for any occasion!
+            Welcome to Honey Run Kettle Company! We craft irresistible, freshly
+            popped kettle corn and serve up refreshing, hand-squeezed lemonades.
+            Perfect for any occasion!
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Button
@@ -47,5 +50,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

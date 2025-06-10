@@ -1,5 +1,5 @@
-import { Zap, Leaf, GlassWater, Award } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Zap, Leaf, GlassWater, Award } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const features = [
   {
@@ -26,7 +26,7 @@ const features = [
     description:
       "From local festivals and farmers markets to private parties and corporate events, our treats are sure to delight!",
   },
-]
+];
 
 export default function FeaturesSection() {
   return (
@@ -34,11 +34,12 @@ export default function FeaturesSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl font-bold tracking-tighter text-honeyrun-black sm:text-4xl md:text-5xl">
-            Why You'll <span className="text-honeyrun-red-dark">Love</span> Honey Run
+            Why You'll <span className="text-honeyrun-red-dark">Love</span>{" "}
+            Honey Run
           </h2>
           <p className="mt-4 text-lg text-gray-600 md:text-xl max-w-2xl mx-auto">
-            We're passionate about creating delicious, high-quality treats that bring smiles to faces. Here's what makes
-            us special:
+            We're passionate about creating delicious, high-quality treats that
+            bring smiles to faces. Here's what makes us special:
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -50,8 +51,12 @@ export default function FeaturesSection() {
               <CardHeader className="items-center text-center pt-8">
                 {" "}
                 {/* Added padding top */}
-                <div className="mb-4 p-4 bg-honeyrun-yellow rounded-full inline-block shadow-inner">{feature.icon}</div>
-                <CardTitle className="text-xl font-semibold text-honeyrun-black">{feature.title}</CardTitle>
+                <div className="mb-4 p-4 bg-honeyrun-yellow rounded-full inline-block shadow-inner w-18 h-18 mx-auto">
+                  {feature.icon}
+                </div>
+                <CardTitle className="text-xl font-semibold text-honeyrun-black">
+                  {feature.title}
+                </CardTitle>
               </CardHeader>
               <CardContent className="text-center pb-8">
                 {" "}
@@ -63,5 +68,5 @@ export default function FeaturesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
